@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+    color: rgb(25, 25, 25);
+    background-color: #FDF3EE;
+    font-family: 'Cormorant Garamond';
+}
+
+.header-navigation{
+    /*
+        margin-inline: 20px;
+    */
+    padding: 0px 20px;
+    color: white;
+    font-size: large;   /*Tamaño*/
+    font-weight: lighter;   /*Grosor*/
+
+    display: flex;  /*divide un elemento en dos ejes*/
+    justify-content: space-between;     /*Mueve el eje X para que se acomoden*/
+    align-items: center;  /*Mueve el eje Y así bien chidísimo*/
+
+    background-color: #FFF9F4;
+    color: #201913;
+
+    /*
+        Modifica los ejes X e Y, intercambio(?
+        flex-direction: column;
+    */
+
+}
+
+.header-title {
+    text-align: center;
+    line-height: 0;
+
+    p {
+        color: #B7ABA4;
+        font-size: x-small;
+    }
+}
+
+.header-display-options {
+    color: black;
+    display: flex;
+    gap: 0px 22px;
+    list-style: none;
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.header-action-button {
+    color: black;
+    display: flex;
+    gap: 0px 22px;
+    list-style: none;
+
+    align-items: center;
+
+    button {
+        border-radius: 30px;
+        border: 0px;
+        max-width: 180px;
+
+        padding: 15px 30px;
+        background-color: #F0DED5;
+        color: #1D2018;
+    }
+}
+
+/*---Parte de la información general que no sé su nombre---*/
+.about-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+
+    width: 80vw;
+    padding: 20px 10vw;
+    
+    background-image: linear-gradient(135deg, #ffffff00, #F0E7E3), url('https://images.unsplash.com/photo-1608656218680-e8be81ce71d7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;             /*La pone sobre todo el fondo*/
+    background-position: center;        /*Centra la imagen*/
+    background-repeat: no-repeat;       /*No se repite en mosaico (Think so)*/
+    background-attachment: fixed;       /*No se mueve la imagen*/
+
+    button {
+        border-radius: 30px;
+        border: 0px;
+
+        padding: 15px 30px;
+        background-color: #677061;
+        color: #FFF;
+    }
+}
+
+.about-uptitle {
+    font-size: xx-small;
+    line-height: 0;
+    color:#322921;
+    margin-bottom: 0;
+}
+
+.about-title {
+    font-size: xx-large;
+    font-weight: lighter;
+    width: 250px;
+    color: #201913;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.about-subtitle {
+    font-size: small;
+    width: 210px;
+    line-height: 1; 
+    margin-top: 2px;
+    margin-bottom: 15px;
+
+    color: #322921;
+}
+
+.about-cards-options {
+    display: flex;
+    justify-content: space-around;
+
+    max-width: 30%;
+    list-style: none;
+    padding: 0;
+
+    margin-bottom: 0px;
+}
+
+.about-card{
+    text-align: center;
+    max-width: 60px;
+
+    a {
+        font-size: large;
+    }
+    p {
+        font-size: x-small;
+    }
+}
+
+/*---Parte de la venta de flores acá bien pasada de verga---*/
+.bouquets-information {
+    margin-top: 30px;
+    text-align: center;
+
+    /*Título de la sección*/
+    h2 {
+        margin-top: 8px;
+        font-weight: lighter;
+        font-size: xx-large;
+    }
+    /*Subtítulo*/
+    p {
+        font-size: small;
+    }
+}
+
+.Monospace-text {
+    font-size:medium;
+    line-height: 0;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-weight:100;
+}
+
+.bouquets-cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    max-width: 24%;
+    max-height: 200px;
+
+    margin-bottom: 100px;
+
+    img {
+        
+        width: 80%;
+        height: 70%;
+
+        margin: 5px;
+
+        border: 1px solid gainsboro;
+        border-radius: 1px;
+
+        object-fit: cover;  /*Se redimensiona al copntenedor*/
+        object-position: center;
+    }
+}
+
+.card-title {
+    font-weight: bolder;
+    line-height: 0;
+}
+
+.card-subtitle {
+    font-size: xx-small;
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+.buy-button {
+    font-family: 'Garamond';
+
+    border-radius: 5px;
+    border: 0px;
+    max-width: 140px;
+
+    padding: 10px 30px;
+    background-color: #F0DED5;
+    color: #1D2018;
+}
+
+/*Día de las madres en la mdre*/
+.special-event-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+
+    width: 80vw;
+    padding: 20px 10vw;
+    
+    background-image: linear-gradient(135deg, #F0E7E3, #ffffff00), url('https://images.unsplash.com/photo-1608656218680-e8be81ce71d7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;             /*La pone sobre todo el fondo*/
+    background-position: center;        /*Centra la imagen*/
+    background-repeat: no-repeat;       /*No se repite en mosaico (Think so)*/
+    background-attachment: fixed;       /*No se mueve la imagen*/
+
+    button {
+        border-radius: 30px;
+        border: 0px;
+
+        padding: 15px 30px;
+        background-color: #677061;
+        color: #FFF;
+    }
+}
+
+.special-event-text {
+    text-align: center;
+    max-width: 240px;
+
+    background-color: #f0e7e3af;
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.special-event-uptitle{
+    font-size: small;
+    font-weight:bolder;
+
+    line-height: 0;
+    margin-bottom: 24px;
+}
+.special-event-title{
+    font-size: xx-large;
+    font-weight: lighter;
+
+    line-height: 0;
+    margin-top: 12px;
+}
+.special-event-subtitle{
+    font-size: small;
+
+    margin-top: 0;
+    line-height: 0;
+}
+.special-event-info-text{
+    font-size: x-small;
+    margin-top: 0;
+}
+
+/*Formulario de correo*/
+.mail-form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    button {
+        border-radius: 30px;
+        border: 0px;
+
+        padding: 15px 30px;
+        background-color: #677061;
+        color: #FFF;
+    }
+}
+.mail-form-information {
+    max-width: 250px;
+    margin-right: 50px;
+
+    p {
+        font-size: small;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-size: xx-large;
+        font-weight: lighter;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.mail-form-input{
+    input {
+        width: 80%;
+        height: 30px;
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        border-radius: 5px;
+        border: 1px solid gainsboro; /* Grueso, tipo, color */
+        background-color: white;
+
+        padding-left: 10px;
+    }
+}
+
+.mail-form-image{
+    img {
+        
+        width: 60%;
+        height: 60%;
+
+        margin: 5px;
+
+        object-fit: cover;  /*Se redimensiona al copntenedor*/
+        object-position: center;
+    }
+}
+
+/*---Footers---*/
+.footer-section {
+    padding: 0px 20px;
+    color: white;
+    font-size: large;   /*Tamaño*/
+    font-weight: lighter;   /*Grosor*/
+
+    display: flex;  /*divide un elemento en dos ejes*/
+    justify-content: space-between;     /*Mueve el eje X para que se acomoden*/
+    align-items: center;  /*Mueve el eje Y así bien chidísimo*/
+
+    color: white;
+    background-color: #6B7366;
+
+    font-size: small;
+}
+
+.footer-navigation{
+
+
+    ul {
+        list-style: none;
+    }
+}
